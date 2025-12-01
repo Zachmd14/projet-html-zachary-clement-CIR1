@@ -1,0 +1,28 @@
+body {
+  background-image: url(/images/background-ciel.jpg);
+  background-color: rgb(0, 0, 0, 0.15);
+  background-blend-mode: darken;
+}
+h1 {
+  font-family: "Press Start 2P";
+  font-size: 22px;
+  text-align: center;
+  margin: 1em;
+}
+table {
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2.5px solid #1b1b1b;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.3);
+}
