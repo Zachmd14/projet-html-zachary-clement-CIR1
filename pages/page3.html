@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>page 3</title>
-    <link rel="stylesheet" href="../style/style3.css">
-  </head>
-  <body>
 
-    
+<head>
+  <meta charset="UTF-8">
+  <title>page 3</title>
+  <link rel="stylesheet" href="../style/style3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <h1>POKEMON
+  </h1>
+  <fieldset>
+    <fieldset>
+      <legend>Retour / Avis</legend>
+    </fieldset>
+  </fieldset>
+
+  <fieldset>
+    <form id="quizform">
+
+      <h2>1. Quel est le premier Pokémon du Pokédex ?</h2>
+      <label><input type="radio" name="q1" value="Pikachu"> Pikachu</label>
+      <label><input type="radio" name="q1" value="Florizarre"> Florizarre</label>
+      <label><input type="radio" name="q1" value="Bulbizarre"> Bulbizarre</label>
+      <label><input type="radio" name="q1" value="Salamèche"> Salamèche</label>
+
+      <h2>2.Quel type est le Pokémon Légendaire Lugia ?</h2>
+      <label><input type="radio" name="q2" value="Eau"> Eau / Vol</label>
+      <label><input type="radio" name="q2" value="Psy"> Psy / Vol</label>
+      <label><input type="radio" name="q2" value="Dragon"> Dragon / Vol</label>
+      <label><input type="radio" name="q2" value="Psy2"> Psy / Eau</label>
+
+      <h2>3.Quel Pokémon est connu comme la mascotte officielle de la licence ?</h2>
+      <label><input type="radio" name="q3" value="Rondoudou"> Rondoudou</label>
+      <label><input type="radio" name="q3" value="Dracaufeu"> Dracaufeu</label>
+      <label><input type="radio" name="q3" value="Pikachu"> Pikachu</label>
+      <label><input type="radio" name="q3" value="Evoli"> Evoli</label>
+
+      <h2>4.Combien de générations de Pokémon existent dans les jeux principaux?</h2>
+      <label><input type="radio" name="q4" value="6"> 6</label>
+      <label><input type="radio" name="q4" value="7"> 7</label>
+      <label><input type="radio" name="q4" value="8"> 8</label>
+      <label><input type="radio" name="q4" value="9"> 9</label>
+
+      <h2>5.Quelle est l'évolution finale de Tiplouf ?</h2>
+      <label><input type="radio" name="q5" value="Pingoléon"> Pingoléon</label>
+      <label><input type="radio" name="q5" value="Prinplouf"> Prinplouf</label>
+      <label><input type="radio" name="q5" value="Empiflor"> Empiflor</label>
+      <label><input type="radio" name="q5" value="Aquali"> Aquali</label>
+
+      <h2>6.Quel Pokémon peut parler comme un humain dans la série animée ?</h2>
+      <label><input type="radio" name="q6" value="Miaouss"> Miaouss</label>
+      <label><input type="radio" name="q6" value="Pikachu"> Pikachu</label>
+      <label><input type="radio" name="q6" value="Ronflex"> Ronflex</label>
+      <label><input type="radio" name="q6" value="Mewtwo"> Mewtwo</label>
+
+      <h2>7.Quel est le Pokémon légendaire de Pokémon Or ?</h2>
+      <label><input type="radio" name="q7" value="Lugia"> Lugia</label>
+      <label><input type="radio" name="q7" value="Ho-Oh"> Ho-Oh</label>
+      <label><input type="radio" name="q7" value="Suicune"> Suicune</label>
+      <label><input type="radio" name="q7" value="Celebi"> Celebi</label>
+
+      <h2>8.Quel est ce pokémon ?</h2>
+      <img src="/images/autaucollant-pikachu-pokemon-001.png" alt="autaucollant-pikachu-pokemon-001"><br>
+      <label><input type="radio" name="q8" value="Raichu"> Raichu</label>
+      <label><input type="radio" name="q8" value="Pikachu"> Pikachu</label>
+      <label><input type="radio" name="q8" value="Pichu"> Pichu</label>
+      <label><input type="radio" name="q8" value="Evoli"> Evoli</label>
+
+      <h2>9.Quel est ce pokémon ?</h2>
+      <img src="/images/autocollant-bulbizarre-pokemon-001.jpg" alt="autocollant-bulbizarre-pokemon-001"><br>
+      <label><input type="radio" name="q9" value="Herbizarre"> Herbizarre</label>
+      <label><input type="radio" name="q9" value="Carpuce"> Carpuce</label>
+      <label><input type="radio" name="q9" value="Bulbizarre"> Bulbizarre</label>
+      <label><input type="radio" name="q9" value="Salamèche"> Salamèche</label>
+
+      <h2>10.Quel est ce pokémon ?</h2>
+      <img src="/images/autocollant-dracaufeu-pokemon-006.jpg" alt="autocollant-dracaufeu-pokemon-006"><br>
+      <label><input type="radio" name="q10" value="Dracaufeu"> Dracaufeu</label>
+      <label><input type="radio" name="q10" value="Dracaufeu-X"> Dracaufeu-X</label>
+      <label><input type="radio" name="q10" value="Reptincel"> Reptincel</label>
+      <label><input type="radio" name="q10" value="Salamèche"> Salamèche</label>
+
+      <br><br><br><br>
+      <button type="button" onclick="verifierlequiz()">Valider</button>
+
+    </form>
+    <p id="score"></p>
+
+    <script>
+      const bonnesReponses = {
+        q1: "Bulbizarre",
+        q2: "Psy",
+        q3: "Dracaufeu",
+        q4: "9",
+        q5: "Pingoléon",
+        q6: "Miaouss",
+        q7: "Ho-Oh",
+        q8: "Pikachu",
+        q9: "Bulbizarre",
+        q10: "Dracaufeu"
+      };
+
+      function verifierlequiz() {
+        let score = 0
+        for (let q in bonnesReponses) {
+          const radios = document.getElementsByName(q);
+          let answered = false;
+          for (let r of radios) {
+            r.parentElement.classList.remove('correct', 'wrong');
+            if (r.checked) {
+              answered = true;
+              if (r.value === bonnesReponses[q]) {
+                r.parentElement.classList.add('correct');
+                score++;
+              } else {
+                r.parentElement.classList.add('wrong');
+              }
+            }
+          }
+        }
+        document.getElementById('score').innerText = `Vous avez ${score} / ${Object.keys(bonnesReponses).length} bonnes réponses.`;
+      }
+    </script>
+
+  </fieldset>
+
+
+</body>
+
 </html>
