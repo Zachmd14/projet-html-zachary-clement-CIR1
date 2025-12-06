@@ -1,7 +1,7 @@
 body {
   background-color: #6b7b6b;
   font-family: "Press Start 2P";
-  background-image: url(/images/pokemon_title.png);
+  background-image: url(../images/pokemon_title.png);
   background-repeat: no-repeat;
   background-position: top;
   display: flex;
