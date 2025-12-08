@@ -51,4 +51,24 @@ td {
 nav {
   text-align: left;
   color: black;
+  transform: translateY(-50%);
+}
+nav a {
+  font-size: 1em;
+  padding: 20px 40px;
+  margin: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
 }
