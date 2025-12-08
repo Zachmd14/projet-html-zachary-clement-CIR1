@@ -17,7 +17,6 @@
     <a href="page2.html" target="_blank">Crée ta carte personalisé</a>
   </nav>
   <h1>POKEMON</h1>
-  <h2><a href="#Avis"> Passer directement aux retours/avis </a></h2>
   <fieldset>
     <form id="quizform">
 
@@ -125,39 +124,17 @@
         document.getElementById('score').innerText = `Vous avez ${score} / ${Object.keys(bonnesReponses).length} bonnes réponses.`;
       }
     </script>
-
-  </fieldset>
-  <h2 id="pointeuravis"></h2>
-  <div id="Retour">
-    <fieldset>
-      <form action="page3.html" method="post">
-        <h2>Toutes les réponses doivent être données sur 10</h2>
-        <h2>Quelle note donneriez-vous à la Page d'Accueil ?</h2>
-        <input type="text" name="index" id="Avis"><br>
-        <h2>Quelle note donneriez-vous au Tableau des Pokémon ?</h2>
-        <input type="text" name="tableau" id="Avis"><br>
-        <h2>Quelle note donneriez-vous au Cartes personalisées ?</h2>
-        <input type="text" name="carte" id="Avis"><br>
-        <h2>Quelle note donneriez-vous au Quizz ?</h2>
-        <input type="text" name="quizz" id="Avis"><br>
-        <h2>Quelle note donneriez-vous au site dans son ensemble ?</h2>
-        <input type="text" name="site" id="Avis"><br>
-        <h2>Avez-vous des remarques particulières ou des suggestions d'amélioration ?</h2>
-        <textarea name="comments" cols="20" rows="4" placeholder="Répondre ici en quelques phrases"> </textarea><br>
-      </form>
-    </fieldset>
-  </div>
-  <footer class="footer">
-    <div class="footer-content">
-      Pokémon et tous les noms associés sont des marques déposées
-      de © Nintendo, Creatures Inc. et GAME FREAK inc.
-      1995-2024.<br>
-      Ce site est un projet fan-made non officiel et n'est pas
-      affilié avec The Pokémon Company.<br>
-      Les images et contenus sont utilisés sous le principe de
-      "fair use" à des fins éducatives et créatives.
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="footer-content">
+        Pokémon et tous les noms associés sont des marques déposées
+        de © Nintendo, Creatures Inc. et GAME FREAK inc.
+        1995-2024.<br>
+        Ce site est un projet fan-made non officiel et n'est pas
+        affilié avec The Pokémon Company.<br>
+        Les images et contenus sont utilisés sous le principe de
+        "fair use" à des fins éducatives et créatives.
+      </div>
+    </footer>
 </body>
 
 </html>
