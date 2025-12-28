@@ -1,3 +1,4 @@
+/*PAGE3 HTML*/
 body {
   background-image: url(../images/558546.jpg);
   background-color: #288887;
@@ -5,26 +6,54 @@ body {
   text-align: center;
   font-family: "Press Start 2P";
 }
-.correct {
-  background-color: #c8e6c9;
+nav {
+  text-align: left;
+  color: black;
+  transform: translateY(-50%);
+  padding-top: 5em;
 }
-.wrong {
-  background-color: #ffcdd2;
+nav a {
+  font-size: 0.7em;
+  padding: 20px 40px;
+  margin: 6px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+}
+h2 {
+  display: table;
+  margin: 3em auto;
+  font-size: 17px;
+  text-align: center;
+  padding: 20px 40px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  border: 3px solid #fff; 
 }
 label {
+  margin: 3em auto;
   font-size: 10px;
-  margin: auto;
-  display: inline-block;
-  margin-right: 20px;
-  padding: 5px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  background-color: #288887;
-  width: 200px;
-  border: 1px white solid;
+  text-align: center;
+  padding: 20px 40px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff; 
 }
 img {
   height: 15em;
+  margin: 1em;
 }
 button {
   margin: auto;
@@ -39,38 +68,9 @@ button {
   font-size: 1em;
   text-align: center;
 }
-h2 {
-  margin: 30px auto;
-  font-size: 17px;
-  display: block;
-  border-radius: 20px;
-  padding: 10px;
-  border: 1px solid white;
-  width: fit-content;
-  background-color: #d9e7ec50;
+.correct {
+  background-color: #c8e6c9;
 }
-nav {
-  text-align: left;
-  font-size: 10px;
-}
-#pointeuravis {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-}
-#Avis {
-  font-size: 10px;
-  margin: auto;
-  display: inline-block;
-  margin-right: 20px;
-  padding: 5px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  background-color: #288887;
-  width: 50px;
-  height: 25px;
-  border: 1px white solid;
-  font-size: 18px;
-  text-align: center;
+.wrong {
+  background-color: #ffcdd2;
 }
